@@ -12,7 +12,7 @@
 
 .page {
   color: var(--main-color);
-  font-family: var(--main-font-family), sans-serif;
+  font-family: var(--main-font-family), fantasy;
   font-size: 18px;
   background-color: var(--additional-color);
   background-image: var(--bg-image);
@@ -32,7 +32,7 @@
 }
 
 .width {
-  width: var(--width);
+  inline-size: var(--width);
 }
 
 .header__section {
@@ -99,11 +99,12 @@
   position: absolute;
   top: clamp(1.563rem, 0.188vw + 1.518rem, 1.688rem);
   right: clamp(0.813rem, 1.127vw + 0.548rem, 1.563rem);
+  opacity: 0.5;
   font-family: var(--accent-font-family), sans-serif;
   font-size: 14px;
   line-height: 1;
-  text-shadow: -1px 0 var(--text-stroke-color), 0 1px var(--text-stroke-color),
-    1px 0 var(--text-stroke-color), 0 -1px var(--text-stroke-color);
+  text-shadow: -1px 0 var(--text-shadow-color), 0 1px var(--text-shadow-color),
+    1px 0 var(--text-shadow-color), 0 -1px var(--text-shadow-color);
   mix-blend-mode: hard-light;
 }
 
@@ -164,22 +165,25 @@
 }
 
 .card__like-button {
-  position: relative;
-  border: 2px solid var(--main-color);
-  overflow: hidden;
-  background-color: transparent;
-  transition: box-shadow 0.3s ease;
-  cursor: pointer;
   min-inline-size: 130px;
   min-block-size: 38px;
 }
 
-.card__like-button:focus {
+.button {
+  position: relative;
+  border: 2px solid var(--main-color);
+  overflow: hidden;
+  background-color: var(--additional-color);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.button:focus-visible {
   box-shadow: 2px 2px 0 var(--main-color);
   outline: none;
 }
 
-.card__like-button::before {
+.button::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -188,7 +192,7 @@
   transform: translate(-100%);
 }
 
-.card__like-button:hover::before {
+.button:hover::before {
   transform: translate(0%);
 }
 
@@ -201,7 +205,6 @@
 }
 
 .save-button {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -210,31 +213,8 @@
   margin: auto;
   margin-top: 50px;
   margin-bottom: 103px;
-  border: 2px solid var(--main-color);
   padding: 13px;
-  overflow: hidden;
-  background-color: var(--additional-color);
-  transition: box-shadow 0.3s ease;
-  cursor: pointer;
   inline-size: clamp(19.25rem, 2.535vw + 18.656rem, 20.938rem);
-}
-
-.save-button:focus {
-  box-shadow: 2px 2px 0 var(--main-color);
-  outline: none;
-}
-
-.save-button::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: var(--main-color);
-  transition: transform 0.5s ease-in-out;
-  transform: translate(-100%);
-}
-
-.save-button:hover::before {
-  transform: translate(0%);
 }
 
 .floppy {
@@ -284,11 +264,13 @@
 }
 
 .modal-box__button {
-  border: 2px solid var(--main-color);
   padding-top: 7px;
   padding-bottom: 7px;
-  background-color: transparent;
   inline-size: 100%;
+}
+
+.button__text-decor {
+  text-transform: uppercase;
 }
 
 @media (width <= 375px) {

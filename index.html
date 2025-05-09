@@ -15,10 +15,10 @@
   </head>
   <body class="page">
     <header class="header width">
-      <section class="header__section">
+      <div class="header__section">
         <h1 class="header__title">&lt;/HTML&gt;</h1>
         <p class="header__subtitle">закрывающий тег</p>
-      </section>
+      </div>
     </header>
     <main class="posts">
       <ul class="posts__list width">
@@ -29,11 +29,12 @@
             </h2>
             <div class="card__image">
               <img
+                loading="lazy"
                 class="card__content-image"
                 src="./images/img-start.jpg"
                 alt="Фото шпица"
               />
-              <div class="watermark">&lt;Будущий программист&gt;</div>
+              <p class="watermark">&lt;Будущий программист&gt;</p>
             </div>
             <div class="card__text">
               <p>
@@ -44,7 +45,11 @@
               <p>Ученье — свет, а неученье — тьма.</p>
             </div>
             <div class="card__buttons">
-              <button class="card__icon-button">
+              <button
+                aria-label="Поставить лайк"
+                type="button"
+                class="card__icon-button"
+              >
                 <svg
                   class="like-icon"
                   width="39"
@@ -52,6 +57,7 @@
                   viewBox="0 0 39 36"
                   fill="transparent"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -77,7 +83,7 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button">
+              <button type="button" class="card__like-button button">
                 <span class="button__text">Like</span>
               </button>
             </div>
@@ -88,11 +94,12 @@
             <h2 class="card__title">1 спринт: Я — чистый лист</h2>
             <div class="card__image">
               <img
+                loading="lazy"
                 class="card__content-image grayscale"
                 src="./images/img-cleansheet.jpg"
                 alt="Шпиц с бумагой в зубах"
               />
-              <div class="watermark">&lt;Чистый лист&gt;</div>
+              <p class="watermark">&lt;Чистый лист&gt;</p>
             </div>
             <div class="card__text">
               <p>
@@ -106,7 +113,11 @@
               <p>Учиться никогда не поздно.</p>
             </div>
             <div class="card__buttons">
-              <button class="card__icon-button">
+              <button
+                aria-label="Поставить лайк"
+                type="button"
+                class="card__icon-button"
+              >
                 <svg
                   class="like-icon"
                   width="39"
@@ -114,6 +125,7 @@
                   viewBox="0 0 39 36"
                   fill="transparent"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -139,7 +151,7 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button">
+              <button type="button" class="card__like-button button">
                 <span class="button__text">Like</span>
               </button>
             </div>
@@ -150,11 +162,12 @@
             <h2 class="card__title">1 спринт: А если не получится?</h2>
             <div class="card__image">
               <img
+                loading="lazy"
                 class="card__content-image contrast"
                 src="./images/img-icaneverything.jpg"
                 alt="Шпиц с большой косточкой в зубах"
               />
-              <div class="watermark">&lt;Сложная задача&gt;</div>
+              <p class="watermark">&lt;Сложная задача&gt;</p>
             </div>
             <div class="card__text">
               <p>
@@ -165,7 +178,11 @@
               <p>Учить — ум точить.</p>
             </div>
             <div class="card__buttons">
-              <button class="card__icon-button">
+              <button
+                aria-label="Поставить лайк"
+                type="button"
+                class="card__icon-button"
+              >
                 <svg
                   class="like-icon"
                   width="39"
@@ -173,6 +190,7 @@
                   viewBox="0 0 39 36"
                   fill="transparent"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -198,7 +216,7 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button">
+              <button type="button" class="card__like-button button">
                 <span class="button__text">Like</span>
               </button>
             </div>
@@ -209,11 +227,12 @@
             <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
             <div class="card__image">
               <img
+                loading="lazy"
                 class="card__content-image saturate"
                 src="./images/img-newby.jpg"
                 alt="Шпиц перегрыз провод"
               />
-              <div class="watermark">&lt;Все ошибаются&gt;</div>
+              <p class="watermark">&lt;Все ошибаются&gt;</p>
             </div>
             <div class="card__text">
               <p>
@@ -226,7 +245,11 @@
               <p>Не стыдно не знать, стыдно не учиться.</p>
             </div>
             <div class="card__buttons">
-              <button class="card__icon-button">
+              <button
+                aria-label="Поставить лайк"
+                type="button"
+                class="card__icon-button"
+              >
                 <svg
                   class="like-icon"
                   width="39"
@@ -234,6 +257,7 @@
                   viewBox="0 0 39 36"
                   fill="transparent"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -259,7 +283,7 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button">
+              <button type="button" class="card__like-button button">
                 <span class="button__text">Like</span>
               </button>
             </div>
@@ -270,11 +294,12 @@
             <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
             <div class="card__image">
               <img
+                loading="lazy"
                 class="card__content-image hue-rotate"
                 src="./images/img-friends.jpg"
                 alt="Шпиц играет с другими шпицами"
               />
-              <div class="watermark">&lt;Друзья рядом&gt;</div>
+              <p class="watermark">&lt;Друзья рядом&gt;</p>
             </div>
             <div class="card__text">
               <p>
@@ -288,7 +313,11 @@
               <p>Не имей сто рублей, а имей сто друзей.</p>
             </div>
             <div class="card__buttons">
-              <button class="card__icon-button">
+              <button
+                aria-label="Поставить лайк"
+                type="button"
+                class="card__icon-button"
+              >
                 <svg
                   class="like-icon"
                   width="39"
@@ -296,6 +325,7 @@
                   viewBox="0 0 39 36"
                   fill="transparent"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -321,7 +351,7 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button">
+              <button type="button" class="card__like-button button">
                 <span class="button__text">Like</span>
               </button>
             </div>
@@ -332,11 +362,12 @@
             <h2 class="card__title">3 спринт: Обходные стратегии</h2>
             <div class="card__image">
               <img
+                loading="lazy"
                 class="card__content-image sepia"
                 src="./images/img-differentpoint.jpg"
                 alt="Шпиц лежит на спине"
               />
-              <div class="watermark">&lt;Взгляд под другим углом&gt;</div>
+              <p class="watermark">&lt;Взгляд под другим углом&gt;</p>
             </div>
             <div class="card__text">
               <p>
@@ -347,7 +378,11 @@
               <p>Не хочу учиться, хочу жениться.</p>
             </div>
             <div class="card__buttons">
-              <button class="card__icon-button">
+              <button
+                aria-label="Поставить лайк"
+                type="button"
+                class="card__icon-button"
+              >
                 <svg
                   class="like-icon"
                   width="39"
@@ -355,6 +390,7 @@
                   viewBox="0 0 39 36"
                   fill="transparent"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -380,7 +416,7 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button">
+              <button type="button" class="card__like-button button">
                 <span class="button__text">Like</span>
               </button>
             </div>
@@ -391,11 +427,12 @@
             <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
             <div class="card__image">
               <img
+                loading="lazy"
                 class="card__content-image blur"
                 src="./images/img-timetorest.jpg"
                 alt="Шпиц с воланчиком в зубах"
               />
-              <div class="watermark">&lt;Время для хобби&gt;</div>
+              <p class="watermark">&lt;Время для хобби&gt;</p>
             </div>
             <div class="card__text">
               <p>
@@ -408,7 +445,11 @@
               <p>Чтобы лучше шло дело, пусть отдыхают голова и тело.</p>
             </div>
             <div class="card__buttons">
-              <button class="card__icon-button">
+              <button
+                aria-label="Поставить лайк"
+                type="button"
+                class="card__icon-button"
+              >
                 <svg
                   class="like-icon"
                   width="39"
@@ -416,6 +457,7 @@
                   viewBox="0 0 39 36"
                   fill="transparent"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -441,7 +483,7 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button">
+              <button type="button" class="card__like-button button">
                 <span class="button__text">Like</span>
               </button>
             </div>
@@ -452,11 +494,12 @@
             <h2 class="card__title">«Сейчас я здесь»</h2>
             <div class="card__image">
               <img
+                loading="lazy"
                 class="card__content-image brightness"
                 src="./images/img-kingofthehill.jpg"
                 alt="Шпиц забрался на высокую точку"
               />
-              <div class="watermark">&lt;Я все смогу&gt;</div>
+              <p class="watermark">&lt;Я все смогу&gt;</p>
             </div>
             <div class="card__text">
               <p>
@@ -470,7 +513,11 @@
               <p>Не учись до старости, а учись до смерти.</p>
             </div>
             <div class="card__buttons">
-              <button class="card__icon-button">
+              <button
+                aria-label="Поставить лайк"
+                type="button"
+                class="card__icon-button"
+              >
                 <svg
                   class="like-icon"
                   width="39"
@@ -478,6 +525,7 @@
                   viewBox="0 0 39 36"
                   fill="transparent"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -503,7 +551,7 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button">
+              <button type="button" class="card__like-button button">
                 <span class="button__text">Like</span>
               </button>
             </div>
@@ -514,7 +562,7 @@
         type="button"
         onclick="window['modal-box'].showModal()"
         aria-controls="modal-box"
-        class="save-button"
+        class="save-button button"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -541,9 +589,9 @@
         <button
           type="button"
           onclick="window['modal-box'].close()"
-          class="modal-box__button"
+          class="modal-box__button button"
         >
-          <span class="button__text">ОК</span>
+          <span class="button__text button__text-decor">ок</span>
         </button>
       </dialog>
     </main>
