@@ -115,6 +115,7 @@
   transition-delay: 0s;
   transition-duration: 0.1s;
   transition-property: fill;
+  transition-timing-function: linear;
 }
 
 .like-icon.is-liked .contour {
@@ -122,6 +123,7 @@
   transition-delay: 0.06s;
   transition-duration: 0.3s;
   transition-property: fill;
+  transition-timing-function: linear;
 }
 
 .sparks {

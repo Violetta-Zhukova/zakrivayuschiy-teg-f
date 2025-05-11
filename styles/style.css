@@ -109,13 +109,13 @@
 }
 
 @supports (
-  (text-stroke: 1px var(--text-stroke-color)) or
-    (-webkit-text-stroke: 1px var(--text-stroke-color))
+  (text-stroke: 1px var(--text-shadow-color)) or
+    (-webkit-text-stroke: 1px var(--text-shadow-color))
 ) {
   .watermark {
     text-shadow: none;
-    -webkit-text-stroke: 1px var(--text-stroke-color);
-    text-stroke: 1px var(--text-stroke-color);
+    -webkit-text-stroke: 1px var(--text-shadow-color);
+    text-stroke: 1px var(--text-shadow-color);
   }
 }
 
